@@ -19,11 +19,21 @@ class Lexer
         tokens << [:CONSTANT, constant]
         i += constant.size
       elsif number = chunk[/\A(0-9)+/,1]
-        tokens << [:NUMBER, number.to_i]
+        tokens << [:NUMERO, number.to_i]
         i += number.size
       elsif string = chunk[/A("(.*?)")/,1]
-        tokens << [:STRING, string]
+        tokens << [:LUBID, string]
         i += string.size + 2
+      #elsif chunk.match(/\A\{/) 
+      #  tokens << [:INDENT, "{"]
+      #  i += 1
+      ## Read Block close 
+      #elsif chunk.match(/\A\{/) 
+      #  tokens << [:DEDENT, "}"]
+      #  i += 1
+      ##Ignore new line 
+      #elsif chunk.match(/\A\n/) 
+      #  i += 1
       elsif indent = chunk[/\A\:\n( +)/m, 1]
         if indent.size <= current_indent
           raise "Bad indent level, got #{indent.size} indents, " +
