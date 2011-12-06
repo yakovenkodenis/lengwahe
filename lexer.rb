@@ -1,5 +1,5 @@
 class Lexer
-  KEYWORDS = ["fn", "habang","klase", "kung", "iba","tama","mali","wala" ]
+  KEYWORDS = ["fn", "habang","klase", "kung", "kundi","tama","mali","wala" ]
   def tokenize(code)
     code.chomp!
     i=0
@@ -18,11 +18,11 @@ class Lexer
       elsif constant = chunk[/\A([A-Z]\w*)/,1]
         tokens << [:CONSTANT, constant]
         i += constant.size
-      elsif number = chunk[/\A(0-9)+/,1]
+      elsif number = chunk[/\A([0-9])+/,1]
         tokens << [:NUMERO, number.to_i]
         i += number.size
-      elsif string = chunk[/A("(.*?)")/,1]
-        tokens << [:LUBID, string]
+      elsif string = chunk[/\A"(.*?)"/,1]
+        tokens << [:HIBLA, string]
         i += string.size + 2
       #elsif chunk.match(/\A\{/) 
       #  tokens << [:INDENT, "{"]

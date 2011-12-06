@@ -1,4 +1,4 @@
-require "lexer.rb"
+require "parser.rb"
 
 code = <<-EOS
 klase Awesome:
@@ -14,4 +14,5 @@ kundi:
   weird
 EOS
 
-p Lexer.new.tokenize(code)
+
+p Parser.new.parse(code)
