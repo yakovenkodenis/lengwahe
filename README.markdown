@@ -21,7 +21,8 @@ Then instantiate it:
     kahangahanga = Kahangahanga.bago
 
 Then lets do some conditional statements:
-    kung kahangahanga:`
+
+    kung kahangahanga:
       imprenta("gumagana ba ang tagalog na lengwaheng ito?")
       imprenta(kahangahanga.gumagana_ba)`
     kundi:
