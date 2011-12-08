@@ -70,7 +70,7 @@ class Context
     @@constants[name]
   end
 
-  def [](name,value)
+  def []=(name,value)
     @@constants[name] = value
   end
 end
@@ -100,7 +100,7 @@ Runtime["Class"].awesome_methods["new"] = proc do |receiver, arguments|
   receiver.new
 end
 
-Runtime["Object"].awesome_method["print"] = proc do |receiver, arguments|
+Runtime["Object"].awesome_methods["print"] = proc do |receiver, arguments|
   puts arguments.first.ruby_value
   Runtime["nil"]
 end

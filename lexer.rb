@@ -34,7 +34,7 @@ class Lexer
       ##Ignore new line 
       #elsif chunk.match(/\A\n/) 
       #  i += 1
-      elsif indent = chunk[/\A\:\n( +)/m, 1]
+      elsif (indent = chunk[/\A\:\n( +)/m, 1]|| indent = chunk[/\A\:\n(\t+)/m, 1])
         if indent.size <= current_indent
           raise "Bad indent level, got #{indent.size} indents, " +
             "expected > #{current_indent}"
@@ -43,7 +43,7 @@ class Lexer
         indent_stack.push(current_indent)
         tokens << [:INDENT, indent.size]
         i += indent.size + 2
-      elsif indent = chunk[/\A\n( *)/m,1]
+      elsif ( indent = chunk[/\A\n(\t+)/m,1] || indent = chunk[/\A\n( *)/m,1]  )
         if indent.size == current_indent
           tokens << [:NEWLINE, "\n"]
         elsif indent.size < current_indent
@@ -57,6 +57,8 @@ class Lexer
         i += indent.size + 1
       elsif chunk.match(/\A /)
         i += 1
+      #elsif chunk.match(/\A\t/)
+      #  i += 1
       else
         value = chunk[0,1]
         tokens << [value, value]

@@ -2,7 +2,7 @@ require "parser"
 require "runtime"
 
 code = <<-EOS
-klase Awesome
+klase Awesome:
 	fn does_its_work:
 		"yeah!"
 
@@ -10,7 +10,7 @@ awesome_object = Awesome.new
 kung awesome_object:
 	print("awesome object does its work!")
 	print("awesome_object.does_its_work")
-kundi
+kundi:
 	print("Something wrong")
 EOS
 

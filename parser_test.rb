@@ -2,16 +2,15 @@ require "parser.rb"
 
 code = <<-EOS
 klase Awesome:
-  fn initialize(name):
-    pass
+	fn does_its_work:
+		"yeah!"
 
-  fn x:
-    2
-
-kung tama:
-  aw = Awesome.new("brilliant")
+awesome_object = Awesome.new
+kung awesome_object:
+	print("awesome object does its work!")
+	print("awesome_object.does_its_work")
 kundi:
-  weird
+	print("Something wrong")
 EOS
 
 
