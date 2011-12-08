@@ -34,7 +34,7 @@ The output would be:
     // oo naman!
 
 
-The entire could is:
+The entire code is:
 
     klase Kahangahanga:
       paraan gumagana_ba 
@@ -49,3 +49,8 @@ The entire could is:
 
     // gumagana ba ang tagalog na lengwaheng ito?
     // oo naman!`
+
+#Moving on
+This is the end of my journey. So please dont expect new updates to this
+language. Im going to use anything I learned from this to bigger things
+I have in mind such as creating a JVM based javascript User Interface generator.This is a really fun experience, I hope you are too. Enjoy!
