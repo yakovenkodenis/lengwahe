@@ -1,0 +1,11 @@
+klase Kahangahanga:
+	paraan gumagana_ba:
+		"oo naman!"
+
+kahangahanga = Kahangahanga.bago
+kung kahangahanga:
+	imprenta("gumagana ba ang tagalog na lengwaheng ito?")
+	imprenta(kahangahanga.gumagana_ba)
+kundi:
+	imprenta("parang may mali")
+

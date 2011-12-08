@@ -96,11 +96,11 @@ Runtime["true"]  = Runtime["TrueClass"].new_value(true)
 Runtime["false"] = Runtime["FalseClass"].new_value(false)
 Runtime["nil"]   = Runtime["NilClass"].new_value(nil)
 
-Runtime["Class"].awesome_methods["new"] = proc do |receiver, arguments|
+Runtime["Class"].awesome_methods["bago"] = proc do |receiver, arguments|
   receiver.new
 end
 
-Runtime["Object"].awesome_methods["print"] = proc do |receiver, arguments|
+Runtime["Object"].awesome_methods["imprenta"] = proc do |receiver, arguments|
   puts arguments.first.ruby_value
   Runtime["nil"]
 end

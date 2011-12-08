@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+# Pinoy Programming Language
+
+require "parser"
+require "runtime"
+require "readline"
+
+def eval(code)
+  Parser.new.parse(code).eval(Runtime).ruby_value
+end
+
+if file = ARGV.first
+  eval File.read(file)
+else
+  puts "Pinoy REPL, Ctrl+c to quit"
+  loop do
+    line = Readline::readline(">> ")
+    Readline::HISTORY.push(line)
+    puts "=> #{eval(line).inspect}"
+  end
+end

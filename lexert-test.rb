@@ -24,4 +24,4 @@ kundi:
 	print("Something wrong")
 EOS
 
-p Lexer.new.tokenize(code)
+p Lexer.new.tokenize(File.read("PinoyLanguageSample.pny"))

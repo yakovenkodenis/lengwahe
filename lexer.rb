@@ -1,5 +1,5 @@
 class Lexer
-  KEYWORDS = ["fn", "habang","klase", "kung", "kundi","tama","mali","wala" ]
+  KEYWORDS = ["paraan", "habang","klase", "kung", "kundi","tama","mali","wala" ]
   def tokenize(code)
     code.chomp!
     i=0

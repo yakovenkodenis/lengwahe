@@ -1,12 +1,12 @@
 class Parser
 
 token KUNG KUNDI
-token FN
+token PARAAN
 token KLASE
 token NEWLINE
-token NUMERO 
+token NUMERO
 token HIBLA
-token TAMA MALI WALA 
+token TAMA MALI WALA
 token IDENTIFIER
 token CONSTANT
 token INDENT DEDENT
@@ -72,8 +72,8 @@ rule
 
 
   Def:
-    FN IDENTIFIER Block { result = DefNode.new(val[1], [], val[2]) }
-  | FN IDENTIFIER
+    PARAAN IDENTIFIER Block { result = DefNode.new(val[1], [], val[2]) }
+  | PARAAN IDENTIFIER
     "(" ParamList ")" Block { result = DefNode.new(val[1], val[3], val[5])}
   ;
 
