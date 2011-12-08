@@ -53,4 +53,4 @@ The entire code is:
 #Moving on
 This is the end of my journey. So please dont expect new updates to this
 language. Im going to use anything I learned from this to bigger things
-I have in mind such as creating a JVM based javascript User Interface generator.This is a really fun experience, I hope you like it too. Enjoy!
+I have in mind such as creating a JVM based javascript generator. This is a really fun experience, I hope you like it too. Enjoy!
