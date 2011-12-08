@@ -8,16 +8,17 @@ similar to Ruby with Python indentation. A keyword "klase" means a
 Class, a "paraan" as a Function, "kung" is "If", "kundi" as "if else"
 
 best way is to look at the sample
-  klase Kahangahanga:
-  	paraan gumagana_ba:
-  		"oo naman!"
-  
-  kahangahanga = Kahangahanga.bago
-  kung kahangahanga:
-  	imprenta("gumagana ba ang tagalog na lengwaheng ito?")
-  	imprenta(kahangahanga.gumagana_ba)
-  kundi:
-  	imprenta("parang may mali")
 
-  // gumagana ba ang tagalog na lengwaheng ito?
-  // oo naman!
+  `klase Kahangahanga:
+  `paraan gumagana_ba:
+  `	"oo naman!"
+  
+  `kahangahanga = Kahangahanga.bago
+  `kung kahangahanga:
+  `  imprenta("gumagana ba ang tagalog na lengwaheng ito?")
+  `  imprenta(kahangahanga.gumagana_ba)
+  `kundi:
+     imprenta("parang may mali")
+
+  `// gumagana ba ang tagalog na lengwaheng ito?
+  `// oo naman!
