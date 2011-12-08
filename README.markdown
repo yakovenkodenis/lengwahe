@@ -13,16 +13,12 @@ best way is to look at the sample:
       paraan gumagana_ba 
         "oo naman!"
 
-  `klase Kahangahanga:`
-  ` paraan gumagana_ba:`
-  `	  "oo naman!"`
-  
-  `kahangahanga = Kahangahanga.bago`
-  `kung kahangahanga:`
-  `  imprenta("gumagana ba ang tagalog na lengwaheng ito?")`
-  `  imprenta(kahangahanga.gumagana_ba)`
-  `kundi:`
-     `imprenta("parang may mali")`
+    kahangahanga = Kahangahanga.bago
+    kung kahangahanga:`
+      imprenta("gumagana ba ang tagalog na lengwaheng ito?")
+      imprenta(kahangahanga.gumagana_ba)`
+    kundi:
+      imprenta("parang may mali")
 
-  `// gumagana ba ang tagalog na lengwaheng ito?`
-  `// oo naman!`
+    // gumagana ba ang tagalog na lengwaheng ito?
+    // oo naman!`
