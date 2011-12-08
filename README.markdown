@@ -7,7 +7,33 @@ Basically all of the keywords uses "tagalog" words. The syntax is
 similar to Ruby with Python indentation. A keyword "klase" means a
 Class, a "paraan" as a Function, "kung" is "If", "kundi" as "if else"
 
-best way is to look at the sample:
+Best way is to look at the sample
+
+
+First lets define a class:
+
+    klase Kahangahanga:
+      paraan gumagana_ba 
+        "oo naman!"
+
+Then instantiate it:
+
+    kahangahanga = Kahangahanga.bago
+
+Then lets do some conditional statements:
+    kung kahangahanga:`
+      imprenta("gumagana ba ang tagalog na lengwaheng ito?")
+      imprenta(kahangahanga.gumagana_ba)`
+    kundi:
+      imprenta("parang may mali")
+
+The output would be:
+
+    // gumagana ba ang tagalog na lengwaheng ito?
+    // oo naman!
+
+
+The entire could is:
 
     klase Kahangahanga:
       paraan gumagana_ba 
